@@ -212,3 +212,7 @@ Use these commands continuously to track and save your progress.
 * `git restore <file-name>`
 
   * Discards unstaged changes to a file.
+  * 
+## Pull Practice
+
+Testing git pull from GitHub to local machine.
