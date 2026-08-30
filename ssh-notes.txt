@@ -1,0 +1,12 @@
+SSH GitHub Practice
+
+SSH key is used to authenticate GitHub securely.
+
+Private Key:
+~/.ssh/id_ed25519
+
+Public Key:
+~/.ssh/id_ed25519.pub
+
+Test SSH:
+ssh -T git@github.com
