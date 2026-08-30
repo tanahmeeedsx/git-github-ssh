@@ -215,4 +215,4 @@ Use these commands continuously to track and save your progress.
   * 
 ## Pull Practice
 
-Testing git pull from GitHub to local machine.
+Testing git pull from GitHub to local machine
