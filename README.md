@@ -56,13 +56,13 @@ Hi username! You've successfully authenticated, but GitHub does not provide shel
 
 Instead of using HTTPS:
 
-```bash
+```text
 https://github.com/username/repository.git
 ```
 
 use the SSH URL:
 
-```bash
+```text
 git@github.com:username/repository.git
 ```
 
@@ -140,12 +140,15 @@ Use these commands continuously to track and save your progress.
 * `git status`
 
   * Shows modified, staged, or untracked files.
+
 * `git add .`
 
   * Stages all current changes.
+
 * `git add <file-name>`
 
   * Stages a specific file.
+
 * `git commit -m "your descriptive message"`
 
   * Saves staged changes into local Git history.
@@ -155,12 +158,15 @@ Use these commands continuously to track and save your progress.
 * `git branch`
 
   * Lists local branches.
+
 * `git switch -c <new-branch-name>`
 
   * Creates and switches to a new branch.
+
 * `git switch <branch-name>`
 
   * Switches to an existing branch.
+
 * `git merge <branch-name>`
 
   * Merges another branch into the current branch.
@@ -170,18 +176,23 @@ Use these commands continuously to track and save your progress.
 * `git clone <ssh-url>`
 
   * Clones a repository using SSH.
+
 * `git pull`
 
   * Downloads and merges remote changes.
+
 * `git pull --rebase`
 
   * Downloads changes and rebases local commits on top.
+
 * `git push`
 
   * Uploads local commits to the remote repository.
+
 * `git push -u origin <branch-name>`
 
   * Pushes a new branch and sets its upstream.
+
 * `git fetch`
 
   * Downloads remote changes without modifying the working directory.
@@ -191,9 +202,11 @@ Use these commands continuously to track and save your progress.
 * `git diff`
 
   * Shows unstaged changes.
+
 * `git diff --staged`
 
   * Shows staged changes.
+
 * `git log --oneline --graph`
 
   * Displays a visual commit history.
@@ -203,16 +216,77 @@ Use these commands continuously to track and save your progress.
 * `git stash`
 
   * Temporarily stores uncommitted changes.
+
 * `git stash pop`
 
   * Restores the latest stash.
+
 * `git commit --amend -m "updated message"`
 
   * Updates the latest commit.
+
 * `git restore <file-name>`
 
   * Discards unstaged changes to a file.
-  * 
-## Pull Practice
 
-Testing git pull from GitHub to local machine
+---
+
+## 🔄 Pull Practice
+
+This section was added to practice synchronizing changes between GitHub and the local repository.
+
+The purpose is to understand how `git pull`, remote changes, and local changes work together.
+
+Example workflow:
+
+```bash
+git status
+git pull
+git log --oneline --graph
+```
+
+After making changes locally, the updated files can be committed and pushed back to GitHub:
+
+```bash
+git add .
+git commit -m "Update README documentation"
+git push
+```
+
+This practice helps build familiarity with the complete Git workflow:
+
+```text
+Local Changes
+      │
+      ▼
+   git add
+      │
+      ▼
+  git commit
+      │
+      ▼
+   git push
+      │
+      ▼
+    GitHub
+      │
+      ▼
+   git pull
+      │
+      ▼
+Local Repository
+```
+
+---
+
+## 🤝 Contribution Practice
+
+This repository is also used to practice making small documentation updates and maintaining a GitHub repository through regular commits.
+
+Each update provides an opportunity to practice:
+
+* Making changes to an existing project
+* Creating meaningful commits
+* Pushing changes through SSH
+* Synchronizing local and remote repositories
+* Maintaining clean project documentation
